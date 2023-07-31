@@ -7,7 +7,9 @@
 
     const homeButton = document.createElement("button");
     homeButton.id = "home";
+    homeButton.classList.add("focused")
     homeButton.textContent = "Home";
+    homeButton.setAttribute("autofocus", "");
 
     const menuButton = document.createElement("button");
     menuButton.id = "menu";
@@ -33,7 +35,7 @@
     h1.textContent = "The Bear";
 
     const p = document.createElement("p");
-    p.textContent = "hello this is a check for the real font that i need working"
+    p.textContent = "Come for the food, stay for the chaos."
   
     pagebody.appendChild(h1);
     pagebody.appendChild(p);
@@ -46,7 +48,7 @@ const createFooter = function() {
     footer.id = "footer";
 
     const p = document.createElement("p");
-    p.textContent = "test test test test test";
+    p.textContent = "Created by C M Oxford-Mahoney";
 
     footer.appendChild(p);
 

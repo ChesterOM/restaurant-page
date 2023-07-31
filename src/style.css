@@ -24,15 +24,37 @@ body {
 }
 
 h1 {
-    color: rgb(169, 183, 114);
+    color: rgba(216, 186, 16, 0.771);
     font-family: myFont-semibold; 
-    font-size: 70px;
-    text-shadow: -1px 1px 1px rgba(0,0,0,0.63);
+    font-size: 7em;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
 }
 
 p {
     color: white;
     font-family: myFont-regular;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    border-radius: 1px;
+    color: rgb(169, 183, 114);
+    font-size: 20px;
+    margin: 25px;
+    padding-bottom: 5px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.12);
+}
+
+button:focus,
+button.focused {
+    border-bottom: 2px solid;
+    outline: none; 
+    transform: translateY(-3px) scale(1.12);
 }
 
 #content {
@@ -46,14 +68,39 @@ p {
     height: 7.5vh;
     width: 100vw;
     border-bottom: 1px solid rgba(255, 217, 0, 0.704);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #page-body {
     flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-body h1 {
+    margin-top: -150px;
+}
+
+#page-body p {
+    font-size: 1.3em;
+    margin-top: -20px;
+    color: rgb(169, 183, 114);
+    text-shadow: -1px 1px 9px rgba(0,0,0,1);
 }
 
 #footer {
     height: 5vh;
     width: 100vw;
     border-top: 1px solid rgba(255, 217, 0, 0.704);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p {
+    color: rgb(169, 183, 114);
 }
