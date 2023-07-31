@@ -10,7 +10,7 @@ const setAboutBody = function() {
 
     const image = document.createElement("img");
     image.id = "image";
-    image.src = "/src/carmy.avif";
+    image.src = "/src/carmy.jpg";
 
     imageWrapper.appendChild(image);
     about.appendChild(imageWrapper);

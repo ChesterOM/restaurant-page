@@ -2,6 +2,8 @@ import { initialPageLoader, reset } from "./load";
 import { navSwitch } from "./nav-switch";
 import { setMenuBody } from "./menu";
 import { setAboutBody } from "./about";
+import './style.css';
+import './carmy.jpg';
 
 const homeClickHandler = () => {
     initPage();
