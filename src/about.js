@@ -1,3 +1,5 @@
+import carmy from './carmy.jpg';
+
 const setAboutBody = function() {
     const pagebody = document.getElementById("page-body");
     pagebody.innerHTML = "";
@@ -10,7 +12,7 @@ const setAboutBody = function() {
 
     const image = document.createElement("img");
     image.id = "image";
-    image.src = "/src/carmy.jpg";
+    image.src = carmy;
 
     imageWrapper.appendChild(image);
     about.appendChild(imageWrapper);
