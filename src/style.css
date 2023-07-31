@@ -24,9 +24,10 @@ body {
 }
 
 h1 {
-    color: aliceblue;
+    color: rgb(169, 183, 114);
     font-family: myFont-semibold; 
     font-size: 70px;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.63);
 }
 
 p {
