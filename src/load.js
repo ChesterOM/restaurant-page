@@ -7,7 +7,7 @@
 
     const homeButton = document.createElement("button");
     homeButton.id = "home";
-    homeButton.classList.add("focused")
+    homeButton.classList.add("focused") 
     homeButton.textContent = "Home";
     homeButton.setAttribute("autofocus", "");
 
@@ -55,7 +55,7 @@ const createFooter = function() {
     return footer;
 };
 
-const intialPageLoader = function() {
+const initialPageLoader = function() {
     const contentDiv = document.getElementById("content");
 
     const header = createHeader();
@@ -68,4 +68,10 @@ const intialPageLoader = function() {
 };
 
 
-export { intialPageLoader } ;
+const reset = function(){
+    const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = ""
+}
+
+export { initialPageLoader } ;
+export { reset };
